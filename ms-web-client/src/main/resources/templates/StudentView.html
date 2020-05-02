@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Student</title>
+</head>
+<body>
+<Table border="2">
+    <tr>
+        <th>Nom</th>
+        <th>promo</th>
+        <th>Formatio</th>
+    </tr>
+    <tr th:if="${student.empty}">
+        <td> No Student at this id </td>
+    </tr>
+    <tr>
+        <td><span th="${student.nom}"></span></td>
+        <td><span th="${student.promo}"></span></td>
+        <td><span th="${student.formation}"></span></td>
+
+    </tr>
+</Table>
+</body>
+</html>
